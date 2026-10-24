@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SF6ReplayCoachのGoogle OAuth・YouTube API連携に関するプライバシーポリシーです。">
+<title>プライバシーポリシー | SF6ReplayCoach</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap topbar-inner"><a class="brand" href="./" aria-label="SF6ReplayCoach トップ"><span class="glyph" aria-hidden="true">SF6</span>SF6ReplayCoach</a><nav class="nav" aria-label="メインナビゲーション"><a href="./">ホーム</a><a href="privacy.html" aria-current="page">プライバシーポリシー</a><a href="https://github.com/SashunDev/sf6replaycoach-info/issues" rel="noopener noreferrer">お問い合わせ</a></nav></div></header>
+<main class="wrap policy"><p class="eyebrow">Privacy policy</p><h1>SF6ReplayCoach<br>プライバシーポリシー</h1><p class="small">最終更新日：2026年10月25日</p>
+<div class="summary"><strong>概要</strong><p>SF6ReplayCoachは個人向けWindowsアプリです。YouTube連携は任意であり、利用者が明示的に承認した完成動画のみをYouTubeへ送信します。Google OAuthの認証情報はWindows資格情報マネージャー、投稿履歴はPC内のローカルファイルで管理します。</p></div>
+<h2>1. 適用範囲</h2><p>本ポリシーは、SF6ReplayCoachのGoogle OAuthおよびYouTube API Servicesを使う機能における情報の取得、使用、保存、共有、削除について説明します。YouTube連携を行わない基本的な動画管理機能は、Googleアカウント接続なしで利用できます。</p>
+<h2>2. 要求するGoogleの権限と利用目的</h2><p>Google OAuthを通じて次の権限を要求します。</p><ul><li><code>youtube.readonly</code>：接続したYouTubeチャンネルを確認し、アップロードした動画の公開範囲や処理状態を照合するため。</li><li><code>youtube.upload</code>：利用者が指定・承認した動画を、利用者のYouTubeチャンネルに投稿するため。</li></ul><p>具体的には、チャンネルID・表示名、投稿した動画のID・チャンネルID・公開範囲・アップロード状態・処理状態など、機能に必要な情報を取得します。これらの情報を広告のターゲティング、データ販売、信用評価、監視目的には使用しません。</p>
+<h2>3. YouTubeに送信するデータ</h2><p>利用者が投稿確認画面で対象を確認して確定したときだけ、選択した完成MP4動画とそのタイトル等のメタデータをYouTube Data APIを通じてGoogleへ送信します。タイトルには、セッション日時、使用キャラクター、対戦キャラクター、勝敗、セッション内の試合番号が含まれます。投稿時の公開範囲は「限定公開（unlisted）」を指定します。</p><div class="note warning">限定公開はURLを知る人が視聴できる設定です。YouTube上のプライバシー設定や削除は利用者がYouTube Studioで管理します。SF6ReplayCoachは投稿済み動画を自動削除したり、公開範囲を自動変更したりしません。</div>
+<h2>4. PC内での保存</h2><ul><li><strong>Windows資格情報マネージャー：</strong>Google OAuthクライアントID・クライアントシークレット、リフレッシュトークン、投稿先チャンネル情報、必要時の再開用アップロードセッション情報を、利用者のWindowsアカウントの保護領域に保存します。</li><li><strong>ローカル投稿履歴：</strong>投稿ジョブのID、日時、試合・動画に関する識別情報、タイトル、投稿先チャンネルID、YouTube動画ID、アップロード・処理状態などをアプリデータ内のJSONファイルに保存します。</li><li><strong>録画・完成動画：</strong>PCで管理し、明示的に選んだ動画以外はYouTubeへ送信しません。投稿を理由として元動画や完成動画を自動で削除することはありません。</li></ul><p>投稿履歴は明示的な操作または利用者によるローカルデータの管理まで残ります。一定日数での自動削除は行っていません。認証情報を通常のログや公開Webページ、公開GitHubリポジトリへ書き込まない設計です。</p>
+<h2>5. データの共有先と利用制限</h2><p>投稿を確定すると、動画と必要なメタデータはGoogle（YouTube）に送信され、Googleの利用規約とプライバシーポリシーに従って取り扱われます。Google APIから取得した情報を、広告会社、データブローカー等に販売・提供することはありません。YouTube API Servicesに関するユーザーデータの利用は、アプリが提供する上記機能のために限定します。</p>
+<h2>6. 連携の解除とデータの削除</h2><ul><li>SF6ReplayCoach内の<strong>「この PC の接続情報を削除」</strong>で、このPCに保存されたYouTube接続情報を削除できます。</li><li><a href="https://myaccount.google.com/connections" rel="noopener noreferrer">Googleアカウントの接続管理</a>で、Google側の許可を取り消せます。</li><li>接続解除だけでは、PC内の投稿履歴やYouTubeに投稿済みの動画は削除されません。動画の削除は<a href="https://studio.youtube.com/" rel="noopener noreferrer">YouTube Studio</a>で利用者が行います。</li><li>ローカル投稿履歴の削除は未完了ジョブや重複投稿防止の情報に影響するため、必要な場合は先にサポート窓口へご相談ください。</li></ul>
+<h2>7. YouTube・Googleの規約</h2><p>SF6ReplayCoachはYouTube API Servicesを利用しています。利用者は、YouTubeの機能を利用する際に<a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube利用規約</a>を遵守する必要があります。また、<a href="https://policies.google.com/privacy" rel="noopener noreferrer">Googleプライバシーポリシー</a>および<a href="https://developers.google.com/youtube/terms/developer-policies" rel="noopener noreferrer">YouTube API Servicesデベロッパーポリシー</a>もご参照ください。</p>
+<h2>8. この説明サイトについて</h2><p>このWebサイトは公開アプリ情報の掲載を目的とする静的サイトです。サイト自身に、独自のトラッキングスクリプト、アクセス解析タグ、アカウント作成機能、入力フォームは設けていません。ホスティング事業者（GitHub Pages等）が配信に伴って収集する情報は、その事業者のポリシーに従います。</p>
+<h2>9. 更新と問い合わせ</h2><p>機能やデータの取り扱いを変更する場合、本ポリシーを更新します。お問い合わせ・プライバシーに関する依頼は<a href="https://github.com/SashunDev/sf6replaycoach-info/issues" rel="noopener noreferrer">公開用リポジトリのIssues</a>、またはOAuth同意画面に表示されるユーザーサポートメールへご連絡ください。公開Issuesには認証情報や個人情報を記載しないでください。</p>
+<hr><p><a href="./">← SF6ReplayCoach ホームへ戻る</a></p>
+</main><footer class="footer"><div class="wrap footer-inner"><span>© 2026 SF6ReplayCoach</span><div><a href="./">ホーム</a>　·　<a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube利用規約</a>　·　<a href="https://policies.google.com/privacy" rel="noopener noreferrer">Googleプライバシーポリシー</a></div></div></footer>
+</body></html>
